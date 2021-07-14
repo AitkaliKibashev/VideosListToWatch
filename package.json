@@ -1,6 +1,6 @@
 {
-  "homepage": "https://aitkalikibashev.github.io/VideosListToWatch",
-  "name": "marketplace",
+  "homepage": "https://aitkalikibashev.github.io/videos-list-to-watch",
+  "name": "videos-list-to-watch",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
