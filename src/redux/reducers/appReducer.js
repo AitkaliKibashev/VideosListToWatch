@@ -78,17 +78,13 @@ export const removeVideoFromList = (id) => async (dispatch) => {
 }
 
 export const incrementVideoRating = (id, rating) => async (dispatch) => {
-    dispatch(toggleLoading(true))
     await videosListAPI.changeVideoRating(id, rating + 1, userId)
     dispatch(changeVideoRatingAC(id, +1))
-    dispatch(toggleLoading(false))
 }
 
 export const decrementVideoRating = (id, rating) => async (dispatch) => {
-    dispatch(toggleLoading(true))
     await videosListAPI.changeVideoRating(id, rating - 1, userId)
     dispatch(changeVideoRatingAC(id, -1))
-    dispatch(toggleLoading(false))
 }
 
 export const setVideosToList = () => async (dispatch) => {
